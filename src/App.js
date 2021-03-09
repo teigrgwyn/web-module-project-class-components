@@ -28,6 +28,8 @@ class App extends React.Component {
 
   onSubmit = e => {
     e.preventDefault();
+    
+    // rewrite to use setState instead of push
     this.state.todoList.push({
       task: this.state.task,
       id: Date.now(),
